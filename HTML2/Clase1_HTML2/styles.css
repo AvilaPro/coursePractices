@@ -1,0 +1,46 @@
+/* RETO 1: Definir la caja base */
+.card {
+    /* 1. Establecer el ancho y alto (Cap 1.3) */
+    width: 400px; 
+    height: auto; /* El alto se ajusta al contenido por defecto [cite: 30] */
+
+    /* 2. Aplicar el borde (Cap 1.2) */
+    /* El borde requiere: ancho, estilo y color [cite: 23] */
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2c3e50;
+}
+
+/* RETO 2: Dar aire al diseño */
+.card {
+    /* 1. Relleno (Padding): Espacio dentro de la caja [cite: 43, 45] */
+    padding: 20px;
+
+    /* 2. Margen (Margin): Espacio fuera de la caja para posicionarla [cite: 39, 41] */
+    margin: 40px auto; /* 'auto' ayuda a centrar la caja horizontalmente */
+    
+    background-color: #ecf0f1; /* Para notar dónde termina el padding */
+}
+
+/* RETO 3: Alinear elementos */
+
+.profile-img {
+    /* 1. Flotar la imagen a la izquierda (Cap 3.2) [cite: 54] */
+    float: left;
+    
+    /* Agregamos un margen derecho para que el texto no se pegue */
+    margin-right: 15px;
+    border: 2px solid #bdc3c7;
+}
+
+.footer {
+    /* 2. Limpiar el flujo para que el pie de página baje (Cap 3.3) [cite: 61] */
+    /* La propiedad clear limpia los elementos flotantes previos [cite: 62] */
+    clear: both;
+    
+    background-color: #34495e;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
